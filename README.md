@@ -43,6 +43,15 @@ Add it to your project `phpcs.xml` or `phpcs.xml.dist` ruleset:
 </ruleset>
 ```
 
+### Sniffing code
+
+The following commands can be added to the `scripts` section of your `composer.json` file to check and fix invalid code:
+
+```
+"codesniffer-check": "vendor/bin/phpcs --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+"codesniffer-fix": "vendor/bin/phpcbf --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests || exit 0",
+```
+
 ## License
 
 This package operates under the MIT License (MIT). Please see [LICENSE](LICENSE.md) for more information.
