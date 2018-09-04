@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ruleset name="Sebastiaan Luca coding standard" namespace="sebastiaanluca/php-codesniffer-ruleset">
-    <config name="installed_paths" value="./vendor/slevomat/coding-standard"/>
+    <config name="installed_paths" value="vendor/slevomat/coding-standard"/>
 
     <!--Arguments-->
 
