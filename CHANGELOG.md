@@ -6,6 +6,10 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## Unreleased
 
+### Fixed
+
+- Removed `basepath` from argument list
+
 ## 0.1.0 (2018-09-05)
 
 ### Added

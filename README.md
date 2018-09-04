@@ -37,6 +37,8 @@ Add it to your project `phpcs.xml` or `phpcs.xml.dist` ruleset:
 ```
 <?xml version="1.0"?>
 <ruleset>
+    <arg name="basepath" value="."/>
+    
     <rule ref="./vendor/sebastiaanluca/php-codesniffer-ruleset/ruleset.xml"/>
 </ruleset>
 ```
