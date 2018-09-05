@@ -29,17 +29,28 @@
         <exclude name="PEAR.Commenting.FunctionComment.SpacingAfterParamType"/>
         <exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
         <exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
+        <exclude name="PEAR.Functions.FunctionCallSignature.MultipleArguments"/>
         <exclude name="PEAR.NamingConventions.ValidFunctionName.FunctionNameInvalid"/>
         <exclude name="PEAR.NamingConventions.ValidFunctionName.FunctionNoCapital"/>
+        <exclude name="PEAR.NamingConventions.ValidFunctionName.PrivateNoUnderscore"/>
         <exclude name="PEAR.NamingConventions.ValidFunctionName.ScopeNotCamelCaps"/>
         <exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+        <exclude name="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
     </rule>
     <rule ref="PSR1">
+        <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace">
+            <exclude-pattern>*/database/migrations/*</exclude-pattern>
+        </exclude>
         <exclude name="PSR1.Methods.CamelCapsMethodName"/>
     </rule>
     <rule ref="PSR2"/>
     <rule ref="Squiz">
         <exclude name="Squiz.Arrays.ArrayDeclaration.DoubleArrowNotAligned"/>
+        <exclude name="Squiz.Classes.ClassFileName.NoMatch">
+            <exclude-pattern>*/database/migrations/*</exclude-pattern>
+        </exclude>
+        <exclude name="Squiz.Arrays.ArrayDeclaration.MultiLineNotAllowed"/>
+        <exclude name="Squiz.Arrays.ArrayDeclaration.SingleLineNotAllowed"/>
         <exclude name="Squiz.Commenting.ClassComment.Missing"/>
         <exclude name="Squiz.Commenting.ClassComment.TagNotAllowed"/>
         <exclude name="Squiz.Commenting.ClosingDeclarationComment.Missing"/>
@@ -56,6 +67,7 @@
         <exclude name="Squiz.Files.FileExtension.ClassFound"/>
         <exclude name="Squiz.Formatting.OperatorBracket.MissingBrackets"/>
         <exclude name="Squiz.NamingConventions.ValidFunctionName.NotCamelCaps"/>
+        <exclude name="Squiz.NamingConventions.ValidFunctionName.PrivateNoUnderscore"/>
         <exclude name="Squiz.NamingConventions.ValidFunctionName.ScopeNotCamelCaps"/>
         <exclude name="Squiz.NamingConventions.ValidVariableName.NotCamelCaps"/>
         <exclude name="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>

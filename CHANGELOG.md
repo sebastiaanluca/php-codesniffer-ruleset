@@ -6,6 +6,22 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## Unreleased
 
+## 0.1.3 (2018-09-05)
+
+### Changed
+
+- Don't require underscore prefix for private methods
+- Don't worry about missing namespaces in migrations
+- Ignore multi line array with single value
+- Ignore multiline arrays that have a single value
+- Ignore multiple function call arguments on a single line
+- Ignore non-matching migration file/class names
+- Ignore single line array with multiple values
+
+### Fixed
+
+- Ignore duplicate indent rule
+
 ## 0.1.2 (2018-09-05)
 
 ### Fixed
