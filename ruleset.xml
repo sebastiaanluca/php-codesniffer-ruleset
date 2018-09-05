@@ -44,6 +44,9 @@
     <rule ref="PSR2"/>
     <rule ref="Squiz">
         <exclude name="Squiz.Arrays.ArrayDeclaration.DoubleArrowNotAligned"/>
+        <exclude name="Squiz.Classes.ClassFileName.NoMatch">
+            <exclude-pattern>*/database/migrations/*</exclude-pattern>
+        </exclude>
         <exclude name="Squiz.Commenting.ClassComment.Missing"/>
         <exclude name="Squiz.Commenting.ClassComment.TagNotAllowed"/>
         <exclude name="Squiz.Commenting.ClosingDeclarationComment.Missing"/>
