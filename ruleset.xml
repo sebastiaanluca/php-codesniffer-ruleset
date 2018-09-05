@@ -32,6 +32,7 @@
         <exclude name="PEAR.Functions.FunctionCallSignature.MultipleArguments"/>
         <exclude name="PEAR.NamingConventions.ValidFunctionName.FunctionNameInvalid"/>
         <exclude name="PEAR.NamingConventions.ValidFunctionName.FunctionNoCapital"/>
+        <exclude name="PEAR.NamingConventions.ValidFunctionName.PrivateNoUnderscore"/>
         <exclude name="PEAR.NamingConventions.ValidFunctionName.ScopeNotCamelCaps"/>
         <exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
     </rule>
