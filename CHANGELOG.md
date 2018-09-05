@@ -6,6 +6,10 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## Unreleased
 
+### Changed
+
+- Added extra `composer.json` check scripts to the README
+
 ### Fixed
 
 - Removed `basepath` from argument list

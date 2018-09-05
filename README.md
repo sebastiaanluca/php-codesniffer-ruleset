@@ -53,11 +53,20 @@ Add it to your project `phpcs.xml` or `phpcs.xml.dist` ruleset:
 
 ### Sniffing code
 
-The following commands can be added to the `scripts` section of your `composer.json` file to check and fix invalid code:
+The following commands can be added to the `scripts` section of your `composer.json` file to check and fix invalid code. Some optional checks are also included to illustrate how they might work together to check all your code.
 
 ```
-"codesniffer-check": "vendor/bin/phpcs --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1",
-"codesniffer-fix": "vendor/bin/phpcbf --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 || exit 0",
+"scripts": {
+    "composer-validate": "@composer validate --no-check-all --strict",
+    "codesniffer-check": "vendor/bin/phpcs --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1",
+    "codesniffer-fix": "vendor/bin/phpcbf --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 || exit 0",
+    "test": "vendor/bin/phpunit",
+    "check": [
+        "@composer-validate",
+        "@codesniffer-check",
+        "@test"
+    ]
+},
 ```
 
 ### Sniffing code in PHPStorm
