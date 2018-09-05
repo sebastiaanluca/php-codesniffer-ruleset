@@ -48,7 +48,8 @@
         <exclude name="Squiz.Classes.ClassFileName.NoMatch">
             <exclude-pattern>*/database/migrations/*</exclude-pattern>
         </exclude>
-        <exclude name="PEAR.NamingConventions.ValidFunctionName.PrivateNoUnderscore"/>
+        <exclude name="Squiz.Arrays.ArrayDeclaration.MultiLineNotAllowed"/>
+        <exclude name="Squiz.Arrays.ArrayDeclaration.SingleLineNotAllowed"/>
         <exclude name="Squiz.Commenting.ClassComment.Missing"/>
         <exclude name="Squiz.Commenting.ClassComment.TagNotAllowed"/>
         <exclude name="Squiz.Commenting.ClosingDeclarationComment.Missing"/>
@@ -65,6 +66,7 @@
         <exclude name="Squiz.Files.FileExtension.ClassFound"/>
         <exclude name="Squiz.Formatting.OperatorBracket.MissingBrackets"/>
         <exclude name="Squiz.NamingConventions.ValidFunctionName.NotCamelCaps"/>
+        <exclude name="Squiz.NamingConventions.ValidFunctionName.PrivateNoUnderscore"/>
         <exclude name="Squiz.NamingConventions.ValidFunctionName.ScopeNotCamelCaps"/>
         <exclude name="Squiz.NamingConventions.ValidVariableName.NotCamelCaps"/>
         <exclude name="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
@@ -124,7 +126,6 @@
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
     <rule ref="SlevomatCodingStandard.Variables.UselessVariable"/>
     <rule ref="Squiz.Arrays.ArrayBracketSpacing"/>
-    <rule ref="Squiz.Arrays.ArrayDeclaration.MultiLineNotAllowed"/>
     <rule ref="Squiz.ControlStructures.ElseIfDeclaration"/>
     <rule ref="Squiz.Strings.DoubleQuoteUsage"/>
     <rule ref="Squiz.Strings.DoubleQuoteUsage.ContainsVar"/>
