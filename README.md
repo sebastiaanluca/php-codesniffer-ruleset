@@ -24,7 +24,7 @@
 
 ## Requirements
 
-- [squizlabs/php_codesniffer](https://github.com/squizlabs/PHP_CodeSniffer) 3.3 or higher
+- [squizlabs/php_codesniffer](https://github.com/squizlabs/PHP_CodeSniffer) 3.3.1 or higher
 - [slevomat/coding-standard](https://github.com/slevomat/coding-standard) 4.7 or higher
 
 ## How to install
