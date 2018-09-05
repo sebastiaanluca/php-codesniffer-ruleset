@@ -4,7 +4,6 @@
 
     <!--Arguments-->
 
-    <arg name="basepath" value="."/>
     <arg name="parallel" value="75"/>
     <arg value="wp"/>
     <arg name="colors"/>
@@ -17,6 +16,12 @@
         <exclude name="Generic.Formatting.MultipleStatementAlignment.NotSame"/>
         <exclude name="Generic.Formatting.SpaceAfterCast"/>
         <exclude name="PEAR.Commenting.ClassComment.Missing"/>
+        <exclude name="PEAR.Commenting.ClassComment.MissingAuthorTag"/>
+        <exclude name="PEAR.Commenting.ClassComment.MissingCategoryTag"/>
+        <exclude name="PEAR.Commenting.ClassComment.MissingLicenseTag"/>
+        <exclude name="PEAR.Commenting.ClassComment.MissingLinkTag"/>
+        <exclude name="PEAR.Commenting.ClassComment.MissingPackageTag"/>
+        <exclude name="PEAR.Commenting.FileComment.Missing"/>
         <exclude name="PEAR.Commenting.FunctionComment.Missing"/>
         <exclude name="PEAR.Commenting.FunctionComment.MissingParamComment"/>
         <exclude name="PEAR.Commenting.FunctionComment.MissingReturn"/>
@@ -36,6 +41,7 @@
     <rule ref="Squiz">
         <exclude name="Squiz.Arrays.ArrayDeclaration.DoubleArrowNotAligned"/>
         <exclude name="Squiz.Commenting.ClassComment.Missing"/>
+        <exclude name="Squiz.Commenting.ClassComment.TagNotAllowed"/>
         <exclude name="Squiz.Commenting.ClosingDeclarationComment.Missing"/>
         <exclude name="Squiz.Commenting.FileComment.Missing"/>
         <exclude name="Squiz.Commenting.FunctionComment.EmptyThrows"/>
