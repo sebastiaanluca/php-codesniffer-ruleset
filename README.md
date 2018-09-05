@@ -38,6 +38,9 @@ Add it to your project `phpcs.xml` or `phpcs.xml.dist` ruleset:
 <?xml version="1.0"?>
 <ruleset>
     <arg name="basepath" value="."/>
+
+    <file>./src</file>
+    <file>./tests</file>
     
     <rule ref="./vendor/sebastiaanluca/php-codesniffer-ruleset/ruleset.xml"/>
 </ruleset>
@@ -48,8 +51,8 @@ Add it to your project `phpcs.xml` or `phpcs.xml.dist` ruleset:
 The following commands can be added to the `scripts` section of your `composer.json` file to check and fix invalid code:
 
 ```
-"codesniffer-check": "vendor/bin/phpcs --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
-"codesniffer-fix": "vendor/bin/phpcbf --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests || exit 0",
+"codesniffer-check": "vendor/bin/phpcs --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1",
+"codesniffer-fix": "vendor/bin/phpcbf --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 || exit 0",
 ```
 
 ## License
