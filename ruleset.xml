@@ -48,6 +48,7 @@
         <exclude name="Squiz.Classes.ClassFileName.NoMatch">
             <exclude-pattern>*/database/migrations/*</exclude-pattern>
         </exclude>
+        <exclude name="PEAR.NamingConventions.ValidFunctionName.PrivateNoUnderscore"/>
         <exclude name="Squiz.Commenting.ClassComment.Missing"/>
         <exclude name="Squiz.Commenting.ClassComment.TagNotAllowed"/>
         <exclude name="Squiz.Commenting.ClosingDeclarationComment.Missing"/>
