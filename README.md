@@ -12,6 +12,9 @@
 
 - [Requirements](#requirements)
 - [How to install](#how-to-install)
+    - [Enabling the rules](#enabling-the-rules)
+    - [Sniffing code](#sniffing-code)
+    - [Sniffing code in PHPStorm](#sniffing-code-in-phpstorm)
 - [License](#license)
 - [Change log](#change-log)
 - [Contributing](#contributing)
@@ -32,6 +35,8 @@ composer require sebastiaanluca/php-codesniffer-ruleset --dev
 
 ## How to use
 
+### Enabling the rules
+
 Add it to your project `phpcs.xml` or `phpcs.xml.dist` ruleset:
 
 ```
@@ -41,7 +46,7 @@ Add it to your project `phpcs.xml` or `phpcs.xml.dist` ruleset:
 
     <file>./src</file>
     <file>./tests</file>
-    
+
     <rule ref="./vendor/sebastiaanluca/php-codesniffer-ruleset/ruleset.xml"/>
 </ruleset>
 ```
@@ -54,6 +59,10 @@ The following commands can be added to the `scripts` section of your `composer.j
 "codesniffer-check": "vendor/bin/phpcs --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1",
 "codesniffer-fix": "vendor/bin/phpcbf --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 || exit 0",
 ```
+
+### Sniffing code in PHPStorm
+
+See [PHP Code Sniffer in PhpStorm](https://confluence.jetbrains.com/display/PhpStorm/PHP+Code+Sniffer+in+PhpStorm) on how to set up CodeSniffer in PHPStorm.
 
 ## License
 
