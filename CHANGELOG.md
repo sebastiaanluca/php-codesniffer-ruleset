@@ -6,6 +6,12 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## Unreleased
 
+## 0.1.2 (2018-09-05)
+
+### Fixed
+
+- Require depending packages as non-dev
+
 ## 0.1.1 (2018-09-05)
 
 ### Changed
