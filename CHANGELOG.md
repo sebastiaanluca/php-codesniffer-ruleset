@@ -6,6 +6,12 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## Unreleased
 
+## 0.2.0 (2018-09-06)
+
+### Changed
+
+- Ignore strict type declaration in resource and config files
+
 ## 0.1.3 (2018-09-05)
 
 ### Changed

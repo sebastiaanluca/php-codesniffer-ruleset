@@ -183,6 +183,8 @@
     </rule>
 
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+        <exclude-pattern>*/config/*</exclude-pattern>
+        <exclude-pattern>*/resources/*</exclude-pattern>
         <properties>
             <property name="newlinesCountBetweenOpenTagAndDeclare" value="2"/>
             <property name="newlinesCountAfterDeclare" value="2"/>
