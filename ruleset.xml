@@ -60,6 +60,7 @@
         <exclude name="Squiz.Commenting.FunctionComment.InvalidReturn"/>
         <exclude name="Squiz.Commenting.FunctionCommentThrowTag.Missing"/>
         <exclude name="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+        <exclude name="Squiz.Commenting.InlineComment.SpacingAfter"/>
         <exclude name="Squiz.Commenting.LongConditionClosingComment.Missing"/>
         <exclude name="Squiz.Commenting.VariableComment.IncorrectVarType"/>
         <exclude name="Squiz.ControlStructures.InlineIfDeclaration.NoBrackets"/>
