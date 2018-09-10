@@ -6,6 +6,12 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## Unreleased
 
+## 0.3.0 (2018-09-10)
+
+### Changed
+
+- Ignore empty line(s) after inline comment
+
 ## 0.2.0 (2018-09-06)
 
 ### Changed
