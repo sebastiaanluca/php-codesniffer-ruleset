@@ -75,6 +75,7 @@
         <exclude name="Squiz.Objects.ObjectInstantiation.NotAssigned"/>
         <exclude name="Squiz.Operators.ComparisonOperatorUsage.ImplicitTrue"/>
         <exclude name="Squiz.Operators.ComparisonOperatorUsage.NotAllowed"/>
+        <exclude name="Squiz.PHP.DisallowBooleanStatement.Found"/>
         <exclude name="Squiz.PHP.DisallowComparisonAssignment.AssignedComparison"/>
         <exclude name="Squiz.PHP.DisallowInlineIf"/>
         <exclude name="Squiz.PHP.DisallowMultipleAssignments"/>
