@@ -38,6 +38,7 @@
         <exclude name="PEAR.NamingConventions.ValidFunctionName.ScopeNotCamelCaps"/>
         <exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
         <exclude name="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+        <exclude name="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
     </rule>
     <rule ref="PSR1">
         <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace">
@@ -67,6 +68,7 @@
         <exclude name="Squiz.Commenting.VariableComment.IncorrectVarType"/>
         <exclude name="Squiz.ControlStructures.InlineIfDeclaration.NoBrackets"/>
         <exclude name="Squiz.ControlStructures.InlineIfDeclaration.NotSingleLine"/>
+        <exclude name="Squiz.ControlStructures.SwitchDeclaration.BreakIndent"/>
         <exclude name="Squiz.Files.FileExtension.ClassFound"/>
         <exclude name="Squiz.Formatting.OperatorBracket.MissingBrackets"/>
         <exclude name="Squiz.NamingConventions.ValidFunctionName.NotCamelCaps"/>
@@ -227,6 +229,13 @@
         <exclude-pattern>*/**/tests</exclude-pattern>
     </rule>
 
+    <rule ref="Squiz.Strings.ConcatenationSpacing">
+        <properties>
+            <property name="spacing" value="1"/>
+            <property name="ignoreNewlines" value="true"/>
+        </properties>
+    </rule>
+
     <rule ref="Squiz.WhiteSpace.FunctionSpacing">
         <properties>
             <property name="spacingBeforeFirst" value="0"/>
@@ -238,13 +247,6 @@
         <properties>
             <property name="spacing" value="1"/>
             <property name="spacingBeforeFirst" value="0"/>
-        </properties>
-    </rule>
-
-    <rule ref="Squiz.Strings.ConcatenationSpacing">
-        <properties>
-            <property name="spacing" value="1"/>
-            <property name="ignoreNewlines" value="true"/>
         </properties>
     </rule>
 
@@ -263,4 +265,3 @@
         <severity>0</severity>
     </rule>
 </ruleset>
-
