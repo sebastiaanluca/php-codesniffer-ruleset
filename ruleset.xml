@@ -24,9 +24,11 @@
         <exclude name="PEAR.Commenting.FileComment.Missing"/>
         <exclude name="PEAR.Commenting.FunctionComment.Missing"/>
         <exclude name="PEAR.Commenting.FunctionComment.MissingParamComment"/>
+        <exclude name="PEAR.Commenting.FunctionComment.MissingParamTag"/>
         <exclude name="PEAR.Commenting.FunctionComment.MissingReturn"/>
         <exclude name="PEAR.Commenting.FunctionComment.SpacingAfterParamName"/>
         <exclude name="PEAR.Commenting.FunctionComment.SpacingAfterParamType"/>
+        <exclude name="PEAR.ControlStructures.ControlSignature.Found"/>
         <exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
         <exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
         <exclude name="PEAR.Functions.FunctionCallSignature.MultipleArguments"/>
@@ -36,6 +38,7 @@
         <exclude name="PEAR.NamingConventions.ValidFunctionName.ScopeNotCamelCaps"/>
         <exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
         <exclude name="PEAR.WhiteSpace.ScopeIndent.Incorrect"/>
+        <exclude name="PEAR.WhiteSpace.ScopeIndent.IncorrectExact"/>
     </rule>
     <rule ref="PSR1">
         <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace">
@@ -65,6 +68,7 @@
         <exclude name="Squiz.Commenting.VariableComment.IncorrectVarType"/>
         <exclude name="Squiz.ControlStructures.InlineIfDeclaration.NoBrackets"/>
         <exclude name="Squiz.ControlStructures.InlineIfDeclaration.NotSingleLine"/>
+        <exclude name="Squiz.ControlStructures.SwitchDeclaration.BreakIndent"/>
         <exclude name="Squiz.Files.FileExtension.ClassFound"/>
         <exclude name="Squiz.Formatting.OperatorBracket.MissingBrackets"/>
         <exclude name="Squiz.NamingConventions.ValidFunctionName.NotCamelCaps"/>
@@ -75,6 +79,7 @@
         <exclude name="Squiz.Objects.ObjectInstantiation.NotAssigned"/>
         <exclude name="Squiz.Operators.ComparisonOperatorUsage.ImplicitTrue"/>
         <exclude name="Squiz.Operators.ComparisonOperatorUsage.NotAllowed"/>
+        <exclude name="Squiz.PHP.DisallowBooleanStatement.Found"/>
         <exclude name="Squiz.PHP.DisallowComparisonAssignment.AssignedComparison"/>
         <exclude name="Squiz.PHP.DisallowInlineIf"/>
         <exclude name="Squiz.PHP.DisallowMultipleAssignments"/>
@@ -181,6 +186,7 @@
             <property name="linesCountBetweenDescriptionAndAnnotations" value="1"/>
             <property name="linesCountBetweenDifferentAnnotationsTypes" value="1"/>
         </properties>
+        <exclude-pattern>*/**/tests</exclude-pattern>
     </rule>
 
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
@@ -215,6 +221,21 @@
         <exclude name="Squiz.Commenting.FunctionComment.TypeHintMissing"/>
     </rule>
 
+    <rule ref="Squiz.Commenting.FunctionComment.MissingParamTag">
+        <exclude-pattern>*/**/tests</exclude-pattern>
+    </rule>
+
+    <rule ref="Squiz.Commenting.FunctionComment.MissingReturn">
+        <exclude-pattern>*/**/tests</exclude-pattern>
+    </rule>
+
+    <rule ref="Squiz.Strings.ConcatenationSpacing">
+        <properties>
+            <property name="spacing" value="1"/>
+            <property name="ignoreNewlines" value="true"/>
+        </properties>
+    </rule>
+
     <rule ref="Squiz.WhiteSpace.FunctionSpacing">
         <properties>
             <property name="spacingBeforeFirst" value="0"/>
@@ -226,13 +247,6 @@
         <properties>
             <property name="spacing" value="1"/>
             <property name="spacingBeforeFirst" value="0"/>
-        </properties>
-    </rule>
-
-    <rule ref="Squiz.Strings.ConcatenationSpacing">
-        <properties>
-            <property name="spacing" value="1"/>
-            <property name="ignoreNewlines" value="true"/>
         </properties>
     </rule>
 
@@ -251,4 +265,3 @@
         <severity>0</severity>
     </rule>
 </ruleset>
-

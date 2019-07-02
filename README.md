@@ -3,6 +3,7 @@
 [![Latest stable release][version-badge]][link-packagist]
 [![Software license][license-badge]](LICENSE.md)
 [![Total downloads][downloads-badge]][link-packagist]
+[![Total stars][stars-badge]][link-github]
 
 [![Read my blog][blog-link-badge]][link-blog]
 [![View my other packages and projects][packages-link-badge]][link-packages]
@@ -102,16 +103,20 @@ My name is Sebastiaan and I'm a freelance Laravel developer specializing in buil
 
 Have a project that could use some guidance? Send me an e-mail at [hello@sebastiaanluca.com][link-author-email]!
 
-[version-badge]: https://poser.pugx.org/sebastiaanluca/php-codesniffer-ruleset/version
-[license-badge]: https://img.shields.io/badge/license-MIT-brightgreen.svg
-[downloads-badge]: https://img.shields.io/packagist/dt/sebastiaanluca/php-codesniffer-ruleset.svg
+[version-badge]: https://img.shields.io/packagist/v/sebastiaanluca/php-codesniffer-ruleset.svg?label=stable
+[license-badge]: https://img.shields.io/badge/license-MIT-informational.svg
+[travis-badge]: https://img.shields.io/travis/sebastiaanluca/php-codesniffer-ruleset/master.svg
+[downloads-badge]: https://img.shields.io/packagist/dt/sebastiaanluca/php-codesniffer-ruleset.svg?color=brightgreen
+[stars-badge]: https://img.shields.io/github/stars/sebastiaanluca/php-codesniffer-ruleset.svg?color=brightgreen
 
 [blog-link-badge]: https://img.shields.io/badge/link-blog-lightgrey.svg
 [packages-link-badge]: https://img.shields.io/badge/link-other_packages-lightgrey.svg
 [twitter-profile-badge]: https://img.shields.io/twitter/follow/sebastiaanluca.svg?style=social
 [twitter-share-badge]: https://img.shields.io/twitter/url/http/shields.io.svg?style=social
 
+[link-github]: https://github.com/sebastiaanluca/php-codesniffer-ruleset
 [link-packagist]: https://packagist.org/packages/sebastiaanluca/php-codesniffer-ruleset
+[link-travis]: https://travis-ci.org/sebastiaanluca/php-codesniffer-ruleset
 [link-contributors]: ../../contributors
 
 [link-portfolio]: https://www.sebastiaanluca.com
