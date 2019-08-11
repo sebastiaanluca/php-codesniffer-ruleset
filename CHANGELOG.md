@@ -6,6 +6,12 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## Unreleased
 
+## 0.4.0 (2019-08-11)
+
+### Changed
+
+- Update packages
+
 ## 0.3.0 (2018-09-10)
 
 ### Changed

@@ -12,8 +12,8 @@
         }
     ],
     "require": {
-        "squizlabs/php_codesniffer": "^3.3.1",
-        "slevomat/coding-standard": "^4.7"
+        "squizlabs/php_codesniffer": "^3.4",
+        "slevomat/coding-standard": "^5.0"
     },
     "scripts": {
         "validate-composer": "@composer validate --no-check-all --strict"
