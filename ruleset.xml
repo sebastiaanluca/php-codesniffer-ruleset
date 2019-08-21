@@ -141,9 +141,16 @@
 
     <!--Rule configuration-->
 
-    <!--The testing bootstrap file uses string concats to stop IDEs seeing the class aliases-->
+    <!--The testing bootstrap file uses string concatenations to stop IDEs seeing the class aliases-->
     <rule ref="Generic.Strings.UnnecessaryStringConcat">
         <exclude-pattern>tests/bootstrap.php</exclude-pattern>
+    </rule>
+
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="300"/>
+            <property name="absoluteLineLimit" value="300"/>
+        </properties>
     </rule>
 
     <rule ref="PEAR.Commenting.FunctionComment.SpacingAfterParamType">
@@ -151,6 +158,7 @@
             <property name="spacing" value="1"/>
         </properties>
     </rule>
+
 
     <!-- PEAR uses warnings for inline control structures, so switch back to errors -->
     <rule ref="Generic.ControlStructures.InlineControlStructure">
