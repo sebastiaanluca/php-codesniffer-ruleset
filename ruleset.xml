@@ -264,12 +264,11 @@
         </properties>
     </rule>
 
-    <!--Variables have to be camel case and should not contain numbers.-->
     <rule ref="Zend.NamingConventions.ValidVariableName">
         <exclude name="Zend.NamingConventions.ValidVariableName.NotCamelCaps"/>
-    </rule>
-
-    <rule ref="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore">
-        <severity>0</severity>
+        <exclude name="Zend.NamingConventions.ValidVariableName.MemberVarContainsNumbers"/>
+        <exclude name="Zend.NamingConventions.ValidVariableName.ContainsNumbers"/>
+        <exclude name="Zend.NamingConventions.ValidVariableName.StringVarContainsNumbers"/>
+        <exclude name="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
     </rule>
 </ruleset>
